@@ -37,7 +37,7 @@ El análisis de permutación confirma coherencia fisiopatológica: las variables
 
 ## Cómo ejecutar el proyecto
 ```bash
-git clone https://github.com
+git clone https://github.com/acostatomas/neural_networking_insulin
 cd insulin-resistance-nn
 pip install -r requirements.txt
 ```
