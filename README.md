@@ -23,8 +23,8 @@ La medición directa de insulina en sangre es costosa y no forma parte de los ch
 
 | Modelo | ROC-AUC | Recall (Clase 1) |
 | :--- | :---: | :---: |
-| Baseline (Regresión Logística) | *0.XXX* | *0.XX* |
-| **Red Neuronal (MLP - PyTorch)** | **0.XXX** | **0.XX** |
+| Baseline (Regresión Logística) | *0.867* | *0.XX* |
+| **Red Neuronal (MLP - PyTorch)** | **0.862** | **0.XX** |
 
 ### Curva ROC y Matriz de Confusión
 ![Curva ROC](assets/curva_roc.png)
