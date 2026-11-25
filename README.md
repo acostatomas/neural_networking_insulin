@@ -16,6 +16,9 @@ La medición directa de insulina en sangre es costosa y no forma parte de los ch
 * **Regularización:** `BatchNorm1d` y `Dropout` (`0.3` y `0.2`) + `weight_decay=1e-4` para prevenir sobreajuste en datos tabulares.
 * **Función de pérdida y optimizador:** `BCEWithLogitsLoss` con optimizador `Adam` (`lr=0.001`).
 
+## Estructura de la red neuronal
+![Estructura de Red Neuornal](assets/red_neuronal_caso.jpg)
+
 ## Resultados y Explicabilidad
 
 | Modelo | ROC-AUC | Recall (Clase 1) |
