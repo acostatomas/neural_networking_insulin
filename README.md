@@ -16,25 +16,28 @@ La medición directa de insulina en sangre es costosa y no forma parte de los ch
 * **Regularización:** `BatchNorm1d` y `Dropout` (`0.3` y `0.2`) + `weight_decay=1e-4` para prevenir sobreajuste en datos tabulares.
 * **Función de pérdida y optimizador:** `BCEWithLogitsLoss` con optimizador `Adam` (`lr=0.001`).
 
+## Estructura de la red neuronal
+![Estructura de Red Neuornal](assets/red_neuronal_caso.jpg)
+
 ## Resultados y Explicabilidad
 
-| Modelo | ROC-AUC | Recall (Clase 1) |
-| :--- | :---: | :---: |
-| Baseline (Regresión Logística) | *0.XXX* | *0.XX* |
-| **Red Neuronal (MLP - PyTorch)** | **0.XXX** | **0.XX** |
+| Modelo | ROC-AUC |
+| --- | ---: |
+| Baseline (regresión logística) | 0,8626 |
+| Red neuronal (MLP en PyTorch) | 0,8641 |
 
 ### Curva ROC y Matriz de Confusión
-![Curva ROC](images/curva_roc.png)
-![Matriz de Confusión](images/matriz_confusion.png)
+![Curva ROC](assets/curva_roc.png)
+![Matriz de Confusión](assets/matriz_confusion.png)
 
 ### Importancia de Variables Clínicas (*Permutation Importance*)
 El análisis de permutación confirma coherencia fisiopatológica: las variables con mayor impacto en la predicción son la circunferencia de cintura, el IMC, la glucosa en ayunas y los triglicéridos.
 
-![Importancia de Variables](images/importancia_variables.png)
+![Importancia de Variables](assets/importancia_variables.png)
 
 ## Cómo ejecutar el proyecto
 ```bash
-git clone https://github.com
+git clone https://github.com/acostatomas/neural_networking_insulin
 cd insulin-resistance-nn
 pip install -r requirements.txt
 ```
