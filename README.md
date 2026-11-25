@@ -24,13 +24,13 @@ La medición directa de insulina en sangre es costosa y no forma parte de los ch
 | **Red Neuronal (MLP - PyTorch)** | **0.XXX** | **0.XX** |
 
 ### Curva ROC y Matriz de Confusión
-![Curva ROC](images/curva_roc.png)
-![Matriz de Confusión](images/matriz_confusion.png)
+![Curva ROC](assets/curva_roc.png)
+![Matriz de Confusión](assets/matriz_confusion.png)
 
 ### Importancia de Variables Clínicas (*Permutation Importance*)
 El análisis de permutación confirma coherencia fisiopatológica: las variables con mayor impacto en la predicción son la circunferencia de cintura, el IMC, la glucosa en ayunas y los triglicéridos.
 
-![Importancia de Variables](images/importancia_variables.png)
+![Importancia de Variables](assets/importancia_variables.png)
 
 ## Cómo ejecutar el proyecto
 ```bash
